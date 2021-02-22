@@ -72,6 +72,7 @@ public class ComposeActivity extends AppCompatActivity {
                             //set result code and bundle data for response
                             setResult(RESULT_OK, intent);
                             //closes the activity, pass data to parent
+
                             finish();
                         } catch (JSONException e) {
                             e.printStackTrace();

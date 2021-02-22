@@ -102,6 +102,7 @@ public class TimelineActivity extends AppCompatActivity {
             //navigate to the compose activity
             Intent intent = new Intent(this, ComposeActivity.class);
             startActivityForResult(intent, REQUEST_CODE);//the child activity should return the tweet
+            adapter.notifyDataSetChanged();
             return true;
         }
 
